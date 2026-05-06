@@ -107,6 +107,10 @@ Data Scientist with **2+ years** of experience designing, deploying, and scaling
   </a>
 </p>
 
+---
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/srinidhireddy09/srinidhi-portfolio/main/assets/footer.svg" width="100%"/>
+  <img src="https://komarev.com/ghpvc/?username=srinidhireddy09&color=blue&style=flat" alt="profile views"/>
 </p>
+
+<p align="center">Thanks for visiting! 🚀</p>

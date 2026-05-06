@@ -97,18 +97,13 @@ Data Scientist with **2+ years** of experience designing, deploying, and scaling
 
 ## 🌐 Connect With Me
 
+
 <p align="center">
-  <a href="https://srinidhi-portfolio-sand.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-srinidhi--portfolio--sand.vercel.app-00d4ff?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
+  <a href="mailto:srinidhi.sanikommu@email.com">
+    <img src="https://img.shields.io/badge/Email-srinidhi.sanikommu@email.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
   <a href="https://linkedin.com/in/srinidhi-sanikommu">
     <img src="https://img.shields.io/badge/LinkedIn-srinidhi--sanikommu-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="https://github.com/srinidhi-sanikommu">
-    <img src="https://img.shields.io/badge/GitHub-srinidhi--sanikommu-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-  <a href="mailto:srinidhireddy0822@gmail.com">
-    <img src="https://img.shields.io/badge/Email-srinidhireddy0822@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </p>
 

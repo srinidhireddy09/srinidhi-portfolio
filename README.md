@@ -1,222 +1,120 @@
-# Flow Shader Frontend Template
+<p align="center">
+  <img src="https://raw.githubusercontent.com/srinidhireddy09/srinidhi-portfolio/main/assets/header.svg" alt="Srinidhi Sanikommu Header" width="100%"/>
+</p>
 
-An immersive studio / portfolio template built around a persistent full-screen WebGL fluid shader background. Hero, philosophy carousel and featured-works gallery all share the same living shader, then the page transitions into a solid-dark mediums glossary and footer. Clicking any gallery project opens a detail page with a full editorial article on the left and a sticky image on the right.
+<p align="center">
+  <a href="https://srinidhi-portfolio-sand.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-00d4ff?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
+  </a>
+  <a href="https://linkedin.com/in/srinidhi-sanikommu">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://github.com/srinidhi-sanikommu">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="mailto:srinidhireddy0822@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+</p>
 
-## Features
+<img src="https://raw.githubusercontent.com/srinidhireddy09/srinidhi-portfolio/main/assets/wave.svg" width="100%"/>
 
-- Persistent Three.js fluid shader background (`FluidBackground`), shared across the first three sections
-- GSAP + Lenis smooth scroll
-- Full-screen hero with large bilingual wordmark, eyebrow + title + description + CTA
-- Scroll-driven 3D rolling text ring with speed-reactive skew and blur
-- Asymmetric, vertically-staggered featured works gallery
-- Detail sub-page with sticky article-style layout (left article, right sticky image), preserves scroll position on back
-- Gooey-SVG hover rows in the mediums glossary
-- Full-width footer with ambient video background
+## 🧠 About
 
-## Tech Stack
-
-- React 19 + TypeScript + Vite
-- Three.js (fluid background shader)
-- GSAP + ScrollTrigger (rolling ring animation)
-- Lenis (smooth scroll)
-- Tailwind CSS + shadcn/ui primitives
-
-## Quick Start
-
-1. `npm install`
-2. Edit `src/config.ts` with your content
-3. Add images and videos into `public/images/` and `public/videos/`
-4. `npm run dev`
-5. `npm run build` for production
-
-## Configuration
-
-All editable content lives in `src/config.ts`. Do not modify component files unless you are fixing a real bug.
-
-### `siteConfig`
-
-```ts
-export const siteConfig = {
-  language: "",          // e.g. "en", "zh-CN"
-  siteTitle: "",         // Browser tab title
-  siteDescription: "",   // Meta description
-}
-```
-
-### `navigationConfig`
-
-```ts
-export const navigationConfig = {
-  brandMark: "",         // Short brand mark shown in the nav (1–3 chars works best)
-  links: [
-    // { label: "项目", targetId: "gallery" },
-    // { label: "介质", targetId: "mediums" },
-    // { label: "哲思", targetId: "philosophy" },
-    // { label: "联络", targetId: "footer" },
-  ],
-}
-```
-
-`targetId` must match the id of the section wrapper in `App.tsx`. Valid ids: `hero-section`, `philosophy`, `gallery`, `mediums`, `footer`.
-
-### `heroConfig`
-
-```ts
-export const heroConfig = {
-  wordmarkText: "",       // Large wordmark on the left half
-  eyebrow: "",            // Small uppercase label
-  titleLine1: "",         // Title line 1
-  titleLine2: "",         // Title line 2 (optional)
-  descriptionLine1: "",   // Description line 1
-  descriptionLine2: "",   // Description line 2 (optional)
-  ctaText: "",            // Button text
-  ctaTargetId: "",        // Scroll target on CTA click, e.g. "philosophy"
-}
-```
-
-### `philosophyConfig`
-
-```ts
-export const philosophyConfig = {
-  eyebrow: "",            // Small uppercase label
-  title: "",              // Section title
-  body: "",               // Short paragraph
-  rollingWords: [],       // Words shown in the 3D rolling ring on the right
-}
-```
-
-### `galleryConfig`
-
-```ts
-export const galleryConfig = {
-  sectionLabel: "",       // Uppercase section label, e.g. "FEATURED WORKS / 002"
-  title: "",              // Section heading
-  projects: [
-    // {
-    //   id: "P-001",                        // Unique id
-    //   title: "",                           // Short title
-    //   location: "",                        // Location string
-    //   year: "",                            // Year string
-    //   image: "images/project-1.jpg",       // Main image
-    //   subtitle: "",                        // One-line italic subtitle in the detail page
-    //   meta: [
-    //     { label: "", value: "" },
-    //   ],
-    //   paragraphs: [                        // 2–4 paragraphs of body copy
-    //     "",
-    //   ],
-    // }
-  ],
-}
-```
-
-### `mediumsConfig`
-
-```ts
-export const mediumsConfig = {
-  sectionLabel: "",       // Uppercase label above the list
-  items: [
-    // { cn: "", en: "", description: "" }
-  ],
-}
-```
-
-### `footerConfig`
-
-```ts
-export const footerConfig = {
-  visionText: "",         // Long vision paragraph (serif display)
-  brandName: "",          // Bottom-left brand name
-  columns: [
-    // {
-    //   heading: "",
-    //   entries: [
-    //     { text: "hello@example.com", href: "mailto:hello@example.com" },
-    //     { text: "Instagram", href: "#" },
-    //     { text: "Multi\nline\naddress" },   // No href = plain text
-    //   ],
-    // }
-  ],
-  copyright: "",
-  videoPath: "",          // Optional ambient footer video, e.g. "videos/footer.mp4"
-}
-```
-
-### `projectDetailConfig`
-
-```ts
-export const projectDetailConfig = {
-  backLabel: "",          // Back button label, e.g. "← 返回" or "← Back"
-}
-```
-
-## Required Images
-
-Paths are relative to `public/`.
-
-### Projects (1 per entry in `galleryConfig.projects`)
-- `images/project-*.jpg` — 1024×1536 portrait recommended
-
-### Videos
-- `videos/footer-*.mp4` — optional ambient footer loop (muted, short, looping)
-
-## Design
-
-**Colors:**
-- Base: `#050A0F` (deep blue-black)
-- Text on shader: white with text-shadow `0 2px 24px rgba(0,0,0,0.45)`
-- Warm ivory on dark sections: `#EDE8E4`
-- Cyan accent: `#30B0D0`
-
-**Fonts:** (loaded from Google Fonts in `index.html`)
-- Display: Noto Serif SC
-- Body: Noto Sans SC
-
-**Animations:**
-- Full-screen Three.js fluid shader, shared across hero / philosophy / gallery
-- IntersectionObserver toggles the shader render loop so it pauses below the fold
-- GSAP ScrollTrigger + scrub drives the 3D rolling ring with skew + motion-blur
-- Lenis smooth scroll globally
-- Gooey SVG blur + swap on mediums rows
-
-## Build
-
-```bash
-npm run build
-```
-
-Output is written to `dist/`.
-
-## Project Structure
+Data Scientist with **2+ years** of experience designing, deploying, and scaling production-grade Machine Learning, NLP, and Large Language Model (LLM) systems for Fortune 100 financial services clients. Currently pursuing **MS in Data Science** at Rowan University.
 
 ```
-3-flow-shader-frontend/
-├── index.html
-├── package.json
-├── public/
-│   ├── images/.gitkeep       # Drop project images here
-│   └── videos/.gitkeep       # Optional footer video
-└── src/
-    ├── config.ts             # ⭐ All editable content
-    ├── main.tsx
-    ├── App.tsx
-    ├── index.css
-    ├── components/
-    │   ├── FluidBackground.tsx
-    │   └── Navigation.tsx
-    ├── sections/
-    │   ├── HeroField.tsx
-    │   ├── PhilosophyCarousel.tsx
-    │   ├── ImmersiveGallery.tsx
-    │   ├── MediumsGlossary.tsx
-    │   └── Footer.tsx
-    └── pages/
-        └── ProjectDetail.tsx
+┌─────────────────────────────────────────────────────────────┐
+│ 🎯 SPECIALIZATION                                           │
+│ ├── Predictive Modeling & Statistical Analysis              │
+│ ├── Natural Language Processing & Generative AI             │
+│ ├── Fraud Detection & Risk Scoring                          │
+│ └── MLOps & Cloud-Scale Data Engineering                    │
+│                                                             │
+│ 💼 EXPERIENCE                                               │
+│ ├── Goldman Sachs — Data Scientist (Aug 2022 – Jul 2024)    │
+│ └── Rowan University — MS Data Science (May 2026)           │
+│                                                             │
+│ 🎓 EDUCATION                                                │
+│ ├── MS in Data Science — Rowan University, GPA 3.4/4.0      │
+│ └── Relevant Coursework: ML, Deep Learning, Big Data, NLP   │
+└─────────────────────────────────────────────────────────────┘
 ```
 
-## Notes
+## 🛠️ Tech Stack
 
-- All content goes in `src/config.ts`.
-- Images and videos go in `public/images/` and `public/videos/`.
-- Don't modify component files unless fixing a real bug — the fluid shader, scroll ring, and detail-page scroll restoration are load-bearing.
-- Color / font / spacing tokens are hardcoded in component styles and in `tailwind.config.js`.
+**Core Technologies**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
+
+**NLP & Generative AI**
+
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+
+**Cloud & MLOps**
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+
+**Visualization**
+
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+
+## 🚀 Featured Projects
+
+| Project | Description | Impact |
+|---------|-------------|--------|
+| 🔍 **Real-Time Fraud Detection** | Ensemble ML pipeline (XGBoost + Isolation Forest) on AWS | $50M+ fraud prevented |
+| 📄 **NLP Document Intelligence** | Transformer-based regulatory document analysis (BERT + RAG) | 1M+ docs at 94% F1 |
+| 📉 **Customer Churn Prediction** | Deep learning early warning system with SHAP explainability | $12M annual savings |
+| 🏦 **Credit Risk Scoring API** | FastAPI + LightGBM with sub-50ms p99 latency | SR 11-7 audit ready |
+
+## 📊 Impact Metrics
+
+<p align="center">
+  <img src="https://img.shields.io/badge/2+-Years_Experience-00d4ff?style=for-the-badge&logo=python&logoColor=white&labelColor=0a0a0a" alt="Experience"/>
+  <img src="https://img.shields.io/badge/$50M+-Fraud_Prevented-7c3aed?style=for-the-badge&logo=amazonaws&logoColor=white&labelColor=0a0a0a" alt="Fraud Prevented"/>
+  <img src="https://img.shields.io/badge/1M+-Docs_Processed-00d4ff?style=for-the-badge&logo=huggingface&logoColor=white&labelColor=0a0a0a" alt="Docs"/>
+  <img src="https://img.shields.io/badge/$12M-Annual_Savings-7c3aed?style=for-the-badge&logo=databricks&logoColor=white&labelColor=0a0a0a" alt="Savings"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/99.2%25-Model_Precision-00d4ff?style=for-the-badge&logo=python&logoColor=white&labelColor=0a0a0a" alt="Precision"/>
+  <img src="https://img.shields.io/badge/94%25-F1_Score-7c3aed?style=for-the-badge&logo=pytorch&logoColor=white&labelColor=0a0a0a" alt="F1 Score"/>
+  <img src="https://img.shields.io/badge/60%25-Deployment_Speedup-00d4ff?style=for-the-badge&logo=docker&logoColor=white&labelColor=0a0a0a" alt="Deployment"/>
+</p>
+
+## 🎓 Certifications
+
+* **AWS Certified Machine Learning – Specialty** — Amazon Web Services
+* **Databricks Certified Machine Learning Professional** — Databricks Academy
+* **Generative AI with Large Language Models, NLP & Deep Learning Specializations** — DeepLearning.AI / Coursera
+
+## 🌐 Connect With Me
+
+<p align="center">
+  <a href="https://srinidhi-portfolio-sand.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-srinidhi--portfolio--sand.vercel.app-00d4ff?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
+  </a>
+  <a href="https://linkedin.com/in/srinidhi-sanikommu">
+    <img src="https://img.shields.io/badge/LinkedIn-srinidhi--sanikommu-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://github.com/srinidhi-sanikommu">
+    <img src="https://img.shields.io/badge/GitHub-srinidhi--sanikommu-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="mailto:srinidhireddy0822@gmail.com">
+    <img src="https://img.shields.io/badge/Email-srinidhireddy0822@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/srinidhireddy09/srinidhi-portfolio/main/assets/footer.svg" width="100%"/>
+</p>

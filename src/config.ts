@@ -89,8 +89,8 @@ export interface ProjectDetailConfig {
 
 export const siteConfig: SiteConfig = {
   language: "en",
-  siteTitle: "Srinidhi Sanikommu | Data Scientist",
-  siteDescription: "Senior Data Scientist with 6+ years building ML solutions for Fortune 500 companies. Goldman Sachs, JPMorgan, UnitedHealth. 50+ models, 15M+ records, 99.2% accuracy.",
+  siteTitle: "Srinidhi Sanikommu | Data Scientist & ML Engineer",
+  siteDescription: "Data Scientist with 2+ years designing, deploying, and scaling production-grade ML, NLP, and LLM systems for Fortune 100 financial services. $50M+ fraud prevented. $12M retention savings.",
 }
 
 export const navigationConfig: NavigationConfig = {
@@ -107,9 +107,9 @@ export const heroConfig: HeroConfig = {
   wordmarkText: "SRINIDHI",
   eyebrow: "DATA SCIENTIST & ML ENGINEER",
   titleLine1: "Turning Data",
-  titleLine2: "Into Decisions",
-  descriptionLine1: "6+ years building ML solutions for Fortune 500.",
-  descriptionLine2: "50+ models. 15M+ records. 99.2% accuracy.",
+  titleLine2: "Into Impact",
+  descriptionLine1: "2+ years building ML, NLP & LLM systems.",
+  descriptionLine2: "Fortune 100 finance. $50M+ fraud prevented.",
   ctaText: "Explore Work",
   ctaTargetId: "philosophy",
 }
@@ -117,14 +117,14 @@ export const heroConfig: HeroConfig = {
 export const philosophyConfig: PhilosophyConfig = {
   eyebrow: "PHILOSOPHY / 001",
   title: "Engineered Impact",
-  body: "I don't just build models. I architect end-to-end ML systems that transform how enterprises operate. From Goldman Sachs' regulatory NLP engines to JPMorgan's real-time fraud detection, every solution is designed for measurable business impact at scale.",
+  body: "Results-driven Data Scientist with 2+ years designing, deploying, and scaling production-grade ML, NLP, and LLM systems for Fortune 100 financial services. Delivered $50M+ in annual fraud-loss prevention, $12M in customer-retention savings, and a 60% reduction in model deployment cycle time.",
   rollingWords: [
     "PRECISION",
     "SCALE",
-    "IMPACT",
-    "INFERENCE",
     "AUTOMATION",
-    "INTELLIGENCE",
+    "INFERENCE",
+    "RAG",
+    "MLOPS",
   ],
 }
 
@@ -140,14 +140,14 @@ export const galleryConfig: GalleryConfig = {
       image: "images/project-1.jpg",
       subtitle: "Real-time transaction fraud detection at scale",
       meta: [
-        { label: "ROLE", value: "Lead Data Scientist" },
+        { label: "ROLE", value: "Data Scientist" },
         { label: "STACK", value: "Python, Spark, Kafka, AWS" },
         { label: "IMPACT", value: "$50M+ fraud prevented" },
         { label: "PERF", value: "99.2% precision" },
       ],
       paragraphs: [
-        "Built an end-to-end real-time fraud detection system processing over 10 million daily transactions. The architecture combines Spark Streaming for data ingestion, ensemble ML methods (XGBoost + Isolation Forest) for detection, and Kafka for event-driven pipeline orchestration.",
-        "The system achieves 99.2% precision while reducing false positives by 35% compared to the legacy rules-based approach. Deployed on AWS with automated model retraining pipelines, the solution has prevented over $50 million in fraudulent transactions since launch.",
+        "Built an end-to-end real-time fraud detection system processing over 10 million daily transactions. The architecture combines Spark Streaming for data ingestion, an ensemble ML method (XGBoost + Isolation Forest) for detection, and Kafka for event-driven pipeline orchestration.",
+        "The system achieves 99.2% precision while reducing false-positive alerts by 35% compared to the legacy rules-based approach. Deployed on AWS with automated model retraining pipelines, the solution has prevented over $50 million in fraudulent transactions since launch.",
         "I architected the MLOps infrastructure using Databricks and AWS SageMaker, reducing model deployment time by 60%. The system includes real-time monitoring, drift detection, and automated alerting to ensure sustained performance in production.",
       ],
     },
@@ -159,22 +159,22 @@ export const galleryConfig: GalleryConfig = {
       image: "images/project-2.jpg",
       subtitle: "NLP platform for regulatory document intelligence",
       meta: [
-        { label: "ROLE", value: "Senior Data Scientist" },
+        { label: "ROLE", value: "Data Scientist" },
         { label: "STACK", value: "BERT, PyTorch, Hugging Face" },
         { label: "SCALE", value: "1M+ documents" },
         { label: "SCORE", value: "94% F1-score" },
       ],
       paragraphs: [
         "Led the development of an enterprise NLP platform for regulatory document analysis at Goldman Sachs. Built on BERT and PyTorch, the system performs document classification, named entity extraction, and compliance risk scoring across 1 million+ regulatory filings.",
-        "The platform achieved a 94% F1-score on entity extraction tasks, outperforming the previous vendor solution by 18 percentage points. Fine-tuned transformer models with domain-specific pretraining on financial regulatory text for optimal accuracy.",
-        "I established the MLOps framework for model versioning, A/B testing, and automated retraining. Mentored a team of 4 data scientists on transformer architectures, experimental design, and production ML best practices.",
+        "The platform achieved a 94% F1-score on entity extraction tasks, reducing manual compliance review workload by 35%. Fine-tuned transformer models with domain-specific pretraining on financial regulatory text for optimal accuracy.",
+        "Prototyped Retrieval-Augmented Generation (RAG) workflows over internal regulatory corpora using vector embeddings (FAISS) and LLM-based summarization, accelerating analyst research cycles by an estimated 40%.",
       ],
     },
     {
       id: "churn-prediction",
       title: "Churn Radar",
-      location: "JPMorgan Chase",
-      year: "2021",
+      location: "Goldman Sachs",
+      year: "2023",
       image: "images/project-3.jpg",
       subtitle: "Deep learning customer retention engine",
       meta: [
@@ -184,28 +184,28 @@ export const galleryConfig: GalleryConfig = {
         { label: "MODEL", value: "Deep Neural Network" },
       ],
       paragraphs: [
-        "Developed a deep learning customer churn prediction engine for JPMorgan Chase that identifies at-risk customers 30 days in advance. The model uses TensorFlow and Keras with embeddings for categorical features and temporal attention for behavioral sequences.",
-        "The system enables proactive retention campaigns that have resulted in $12 million in annual savings. Built automated ETL pipelines processing 50 million records daily using PySpark and Airflow, ensuring fresh feature engineering for real-time predictions.",
-        "Created executive dashboards in Tableau for monitoring churn metrics, model performance, and campaign ROI. Collaborated with marketing and product teams to integrate predictions into CRM workflows for automated intervention triggers.",
+        "Designed a deep-learning customer churn prediction model in TensorFlow and Keras, identifying high-risk customer cohorts 30 days in advance and driving $12 million in annual retention savings through targeted intervention campaigns.",
+        "Built automated ETL pipelines processing 50 million+ records daily using PySpark and Apache Airflow on the firm's cloud data lake, improving feature freshness and downstream model SLAs.",
+        "Deployed the model via FastAPI with Tableau dashboards for business stakeholders to monitor cohort-level risk in real time. SHAP-based explainability ensures transparent, audit-ready model decisions.",
       ],
     },
     {
-      id: "healthcare-risk",
-      title: "HealthGuard",
-      location: "UnitedHealth",
-      year: "2019",
+      id: "credit-risk-api",
+      title: "RiskGuard",
+      location: "Goldman Sachs",
+      year: "2024",
       image: "images/project-4.jpg",
-      subtitle: "Predictive healthcare readmission risk model",
+      subtitle: "Production-grade credit risk scoring REST API",
       meta: [
-        { label: "ROLE", value: "Data Analyst" },
-        { label: "STACK", value: "Scikit-learn, XGBoost, Plotly" },
-        { label: "IMPACT", value: "87% accuracy" },
-        { label: "USERS", value: "200+ executives" },
+        { label: "ROLE", value: "Data Scientist" },
+        { label: "STACK", value: "FastAPI, LightGBM, SHAP" },
+        { label: "LATENCY", value: "sub-50ms p99" },
+        { label: "FOCUS", value: "Explainable AI" },
       ],
       paragraphs: [
-        "Designed and deployed a predictive model for patient readmission risk at UnitedHealth Group, achieving 87% accuracy and improving hospital resource allocation. The model analyzes structured EHR data, claims history, and clinical notes to identify high-risk patients.",
-        "Built interactive Tableau dashboards used by over 200 executives for strategic planning and real-time outcome tracking. Automated reporting pipelines that saved 20+ hours per week of manual work using SQL and Python.",
-        "Partnered with clinicians and operations teams to translate healthcare challenges into actionable analytical frameworks. Conducted deep exploratory data analysis on structured and unstructured healthcare data to uncover key risk drivers.",
+        "Shipped a production-grade credit-risk scoring REST API using FastAPI and LightGBM with sub-50ms p99 latency and SHAP-based explainability for model-risk governance and regulatory audit readiness.",
+        "The API serves real-time risk scores to downstream trading and risk systems, enabling faster credit decisions while maintaining full transparency on model predictions. Integrated with existing risk dashboards for continuous monitoring.",
+        "Collaborated with Risk, Compliance, and Engineering leadership to translate regulatory requirements into audit-ready ML deliverables aligned with SR 11-7 model risk management standards.",
       ],
     },
   ],
@@ -217,39 +217,41 @@ export const mediumsConfig: MediumsConfig = {
     {
       cn: "ML",
       en: "MACHINE LEARNING",
-      description: "Scikit-learn, TensorFlow, PyTorch, XGBoost, LightGBM, Keras, Hugging Face Transformers. 50+ models in production.",
+      description: "Scikit-learn, TensorFlow, PyTorch, XGBoost, LightGBM, Keras. Ensemble methods, anomaly detection, time-series forecasting, hyperparameter tuning. 50+ models in production.",
     },
     {
       cn: "NLP",
-      en: "NATURAL LANGUAGE",
-      description: "BERT, transformer fine-tuning, entity extraction, document classification, sentiment analysis, regulatory text processing.",
+      en: "NLP & GENERATIVE AI",
+      description: "BERT, RoBERTa, GPT, Hugging Face Transformers, LoRA, PEFT. RAG, vector databases (FAISS, Pinecone, Chroma), NER, text classification, summarization, prompt engineering.",
+    },
+    {
+      cn: "OPS",
+      en: "MLOPS & CLOUD",
+      description: "MLflow, Docker, Kubernetes, AWS SageMaker, Vertex AI, Azure ML. CI/CD, model monitoring, drift detection, feature stores (Feast), FastAPI, Flask, REST APIs, A/B testing.",
     },
     {
       cn: "DATA",
       en: "DATA ENGINEERING",
-      description: "Apache Spark, Airflow, Kafka, Databricks, Snowflake, BigQuery. Processing 50M+ records daily.",
-    },
-    {
-      cn: "CLOUD",
-      en: "CLOUD & MLOPS",
-      description: "AWS SageMaker, EC2, S3, Azure ML, GCP, Docker, Kubernetes, MLflow. CI/CD for ML pipelines.",
+      description: "Apache Spark, Kafka, Airflow, Databricks, Snowflake, BigQuery, Delta Lake. ETL/ELT pipelines, streaming data, data lakes, data warehousing. Processing 50M+ records daily.",
     },
     {
       cn: "VIZ",
       en: "VISUALIZATION",
-      description: "Tableau, Power BI, Plotly, Matplotlib, Seaborn, D3.js. Dashboards for 200+ executive users.",
+      description: "Tableau, Power BI, Looker, Plotly, Matplotlib, Seaborn, Streamlit, D3.js, Dash. Executive dashboards and real-time business intelligence reporting.",
     },
   ],
 }
 
 export const footerConfig: FooterConfig = {
-  visionText: "I believe data science is not about algorithms — it is about solving real problems that matter. Every model I build is measured by one standard: did it change something for the better? From Wall Street to healthcare, that principle guides every line of code.",
+  visionText: "I believe data science is measured by one standard: did it change something for the better? From $50M+ fraud prevention to $12M retention savings, every model I build is designed for measurable business impact at scale.",
   brandName: "Srinidhi Sanikommu",
   columns: [
     {
       heading: "CONNECT",
       entries: [
-        { text: "LinkedIn", href: "https://linkedin.com/in/srinidhi-sanikommu" },
+        { text: "LinkedIn", href: "http://linkedin.com/in/srinidhi-sanikommu" },
+        { text: "GitHub", href: "http://github.com/srinidhi-sanikommu" },
+        { text: "Portfolio", href: "https://srinidhi-portfolio-sand.vercel.app/" },
         { text: "Email", href: "mailto:srinidhireddy0822@gmail.com" },
         { text: "+1 856 526 2084" },
       ],
@@ -267,6 +269,15 @@ export const footerConfig: FooterConfig = {
         { text: "MS Data Science" },
         { text: "Rowan University" },
         { text: "GPA 3.4 / 4.0" },
+        { text: "May 2026" },
+      ],
+    },
+    {
+      heading: "CERTIFICATIONS",
+      entries: [
+        { text: "AWS ML – Specialty" },
+        { text: "Databricks ML Pro" },
+        { text: "DeepLearning.AI\nGenerative AI & NLP" },
       ],
     },
   ],

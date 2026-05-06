@@ -1,23 +1,20 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/srinidhireddy09/srinidhi-portfolio/main/assets/header.svg" alt="Srinidhi Sanikommu Header" width="100%"/>
+  <img src="https://raw.githubusercontent.com/sathishlella/srinidhi-portfolio/main/assets/header.svg" alt="Srinidhi Sanikommu Header" width="100%"/>
 </p>
 
 <p align="center">
-  <a href="https://srinidhi-portfolio-sand.vercel.app/">
+  <a href="https://srinidhi-portfolio.vercel.app/">
     <img src="https://img.shields.io/badge/Portfolio-00d4ff?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
   </a>
   <a href="https://linkedin.com/in/srinidhi-sanikommu">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="https://github.com/srinidhi-sanikommu">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-  <a href="mailto:srinidhireddy0822@gmail.com">
+  <a href="mailto:srinidhi.sanikommu@email.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </p>
 
-<img src="https://raw.githubusercontent.com/srinidhireddy09/srinidhi-portfolio/main/assets/wave.svg" width="100%"/>
+<img src="https://raw.githubusercontent.com/sathishlella/srinidhi-portfolio/main/assets/wave.svg" width="100%"/>
 
 ## 🧠 About
 
